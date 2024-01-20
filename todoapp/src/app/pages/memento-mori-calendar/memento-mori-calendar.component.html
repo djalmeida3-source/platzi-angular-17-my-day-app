@@ -1,0 +1,19 @@
+<div class="header">
+  <h2>Memento Mori</h2>
+  <label class="label" for="numberOfYearsCtrl">Number of years: </label>
+  <input type="number" id="numberOfYearsCtrl" [formControl]="numberOfYearsCtrl" (change)="changeNumberOfYearsHandler()"/>
+  <label class="label" for="yearsLived">Years lived: </label>
+  <input type="number" id="yearsLived" [formControl]="yearsLivedCtrl" (change)="changeYearsLivedHandler()"/>
+</div>
+<div class="container">
+  @for (row of squares; track row; let i = $index) {
+    <div class="row">
+      <div class="years">{{ i + 1 }}</div>
+      @for (cell of row; track cell; let j = $index) {
+        <span class="square" [class.fill]="cell === 1"></span>
+      }
+    </div>
+  } @empty {
+    <li><strong>La lista esta en vacio</strong></li>
+  }
+</div>

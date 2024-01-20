@@ -1,0 +1,43 @@
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 2rem;
+}
+
+.row {
+  display: flex;
+}
+
+.years {
+  margin-right: 20px;
+  width: 20px;
+  text-align: right;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid black;
+  margin-bottom: 2px;
+  margin-right: 2px;
+} 
+
+.label {
+  text-align: center;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.fill {
+  background-color: blue;
+}
+ 
+input[type="number"] {
+  text-align: right;
+  width: 40px;
+}
